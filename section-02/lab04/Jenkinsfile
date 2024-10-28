@@ -18,7 +18,7 @@ pipeline {
     stage("git-clone") {
       steps {
         echo "Git clone from gitlab repository"
-        git branch: 'dev', url: 'https://github.com/yoonjk/jenkins-handson.git'
+        git branch: 'dev', url: 'https://github.com/hoho282/jenkins-handson.git'
       }
     }
 
@@ -73,7 +73,7 @@ pipeline {
         echo "Building and push the image..."
         withCredentials ([
           usernamePassword(
-            credentialsId: 'docker-credentials',
+            credentialsId: 'ann2',
             usernameVariable: 'USER', 
             passwordVariable: 'PASSWORD'
           )
