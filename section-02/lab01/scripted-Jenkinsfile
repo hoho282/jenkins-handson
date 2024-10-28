@@ -5,7 +5,7 @@ node {
 	])
 	
 	stage('Get a Maven project') {
-		git url: 'https://github.com/yoonjk/jenkins-handson.git', branch: 'dev'
+		git url: 'https://github.com/hoho282/jenkins-handson.git', branch: 'dev'
 	}
 
 	stage('Read Properties') {
